@@ -2,11 +2,19 @@
 <html>
 	<head>
 		<title>Manchester United FC Quiz</title>
-		<link rel="stylesheet" href="">
-		<link rel="stylesheet" href="">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
-	<div class="question-container">
+	<section class="welcome">
+		<div class="welcome-text">
+			<h1>Welcome to the 2017 Manchester United Quiz</h1>
+		</div>
+		<div class="start">
+			<h3>Start Quiz</h3>
+		</div>
+	</section>
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">What is a nickname for Manchester United FC?</p>
 			 <input type="radio" name="nickname" value="The Red Dragons" class="answer"/>The Red Dragons<br/>
@@ -16,7 +24,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">The current manager of Manchester United FC is ____________?</p>
 			 <input type="radio" name="currentManager" value="Alexander Ferguson" class="answer"/>Alexander Ferguson<br/>
@@ -26,7 +34,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">Which American goalie also played goalie for Manchester United FC?</p>
 			 <input type="radio" name="goalie" value="Clint Dempsey" class="answer"/>Clint Dempsey<br/>
@@ -36,7 +44,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">The home stadium of Manchester United FC is _____________?</p>
 			 <input type="radio" name="stadium" value="The Thunder Dome" class="answer"/>The Thunder Dome<br/>
@@ -46,7 +54,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">The Manchester Derby is between two rival Manchester teams including Manchester United and what other team?</p>
 			 <input type="radio" name="derby" value="Manchester Town" class="answer"/>Manchester Town<br/>
@@ -56,7 +64,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">Which midfielder did Manchester United sign for a record fee from Italian club Juventus at the beginning of the season?</p>
 			 <input type="radio" name="midfielder" value="Po Paula" class="answer"/>Po Paula<br/>
@@ -66,7 +74,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">Which player currently holds the record for most goals scored for Manchester United?</p>
 			 <input type="radio" name="goals" value="Wayne Rooney" class="answer" class="correct"/>Wayne Rooney<br/>
@@ -76,7 +84,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">Which player currently holds the record for most career appearances for Manchester United?</p>
 			 <input type="radio" name="appearances" value="Bobby Charlton" class="answer"/>Bobby Charlton<br/>
@@ -86,7 +94,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">Which player won the FIFA World Player of the Year award while playing for Manchester United?</p>
 			 <input type="radio" name="fifaPlayer" value="David Beckham" class="answer"/>David Beckham<br/>
@@ -96,7 +104,7 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-	<div class="question-container">
+	<div class="question-container hidden">
 		<form action="">
 			 <p class="question">Who has spent the longest amount of time managing Manchester United?</p>
 			 <input type="radio" name="nickname" value="Alexander Ferguson" class="answer" class="correct"/>Alexander Ferguson<br/>
@@ -106,7 +114,12 @@
 			 <input type="submit" value="Submit"/>
 		</form>
 	</div>
-		<script></script>
-		<script></script>
+	<footer>
+		<p>&copy; 2017 Sinan Muyesser</p>
+		<a href="http://twitter.com/sinanmuyesser"><img src="twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com/smuyesser"><img src="facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+	</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
