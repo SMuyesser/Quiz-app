@@ -5,8 +5,11 @@
 	box-sizing: border-box;
 }
 
-.hidden {
-	display: none;
+html {
+	background-image: url(manu-bg.jpg);
+	background-repeat: repeat-y;
+	background-size: cover;
+	min-width: 320px;
 }
 
 
@@ -14,13 +17,7 @@
 /**********************************
 	WELCOME SCREEN
 **********************************/
-
-html {
-	background-image: url(manu-bg.jpg);
-	background-repeat: repeat-y;
-	background-size: cover;
-	min-width: 320px;
-}
+/*-------Welcome Top Text---------*/
 
 section.welcome {
 	width: 100%;
@@ -37,6 +34,7 @@ div.welcome-text {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
+	overflow: auto;
 }
 
 .welcome h1 {
@@ -49,6 +47,8 @@ div.welcome-text {
 	font-size: 3em;
 }
 
+/*-------Start Quiz---------*/
+
 div.start {
 	background: rgba(255, 255, 255, 0.8);
 	border: 3px solid black;
@@ -59,6 +59,10 @@ div.start {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+div.start a {
+	text-decoration: none;
 }
 
 .start h3 {
@@ -76,7 +80,30 @@ div.start:hover {
 
 
 /************************************
-FOOTER
+	Quiz Page
+************************************/
+
+div.question-container {
+	background: rgba(255, 255, 255, 0.8);
+	border: 3px solid black;
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.hidden {
+	display: none;
+}
+
+
+
+/************************************
+	FOOTER
 ************************************/
 
 footer {
