@@ -56,7 +56,7 @@ function renderQuestion () {
 	test.innerHTML += "<input type='radio' name='choices' value='B'>" + chB + '<br>';
 	test.innerHTML += "<input type='radio' name='choices' value='C'>" + chC + '<br>';
 	test.innerHTML += "<input type='radio' name='choices' value='D'>" + chD + '<br><br>';
-	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+	test.innerHTML += "<button onclick='checkAnswer()' id='submit-question'>Submit Answer</button>";
 }
 
 //function to see if checked choices is the correct choice and track correct amount and increase position
@@ -68,7 +68,7 @@ function checkAnswer() {
 		} 
 	}
 
-	if(choice === 'undefined') {
+	if(choice === undefined) {
 		alert('You must select one answer')
 		return;
 	} else if (choice === questions[position][5]) {

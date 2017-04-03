@@ -38,7 +38,6 @@ div.welcome-text {
 }
 
 .welcome h1 {
-	position: absolute;
 	color: #DF0202;
 	text-align: center;
 	padding: 5px 10px;
@@ -53,7 +52,7 @@ div.start {
 	background: rgba(255, 255, 255, 0.8);
 	border: 3px solid black;
 	width: 200px;
-	height: 65px;
+	height: 60px;
 	position: absolute;
 	top: 50%;
 	display: flex;
@@ -65,10 +64,12 @@ div.start a {
 	text-decoration: none;
 }
 
-.start h3 {
-	font-size: 2em;
-	color: #DF0202;
-	padding: 5px 10px;
+#start-button {
+	margin: auto;
+	background-color: #C20808;
+	color: white;
+	width: 100px;
+	height: 35px;
 }
 
 
@@ -91,8 +92,13 @@ div.start a {
 	text-align: center;
 }
 
-#js-ques1 {
+#js-ques {
 	margin: 10px auto;
+}
+
+#js-ques h3 {
+	color: black;
+	font-size: 1.25em;
 }
 
 wrapper.question-count {
@@ -108,6 +114,13 @@ wrapper.question-count {
 	align-items: center;
 }
 
+#submit-question {
+	margin-bottom: 10px;
+	background-color: #C20808;
+	color: white;
+	width: 150px;
+	height: 30px;
+}
 
 /************************************
 	FOOTER
