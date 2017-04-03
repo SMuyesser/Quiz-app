@@ -83,7 +83,7 @@ div.start:hover {
 	Quiz Page
 ************************************/
 
-div.question-container {
+ wrapper.question-box {
 	background: rgba(255, 255, 255, 0.8);
 	border: 3px solid black;
 	width: 70%;
@@ -96,10 +96,18 @@ div.question-container {
 	align-items: center;
 }
 
-div.hidden {
-	display: none;
+wrapper.question-count {
+	background: rgba(255, 255, 255, 0.8);
+	border: 3px solid black;
+	width: 70%;
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 
 
 /************************************
