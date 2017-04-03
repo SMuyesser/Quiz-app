@@ -23,12 +23,28 @@ var questions = [
 	['Who has spent the longest amount of time managing Manchester United?', 'Alexander Ferguson', 'Jose Mourinho', 'David Moyes', 'Louis Van Gaal', 'A']
 ];
 
+function startQuiz () {
+	$('div.start').replaceWith('<wrapper class="question-count"><h3 id="js-question-count"></h3></wrapper><wrapper class="question-box"><div id="js-ques1"></div></wrapper>');
+	renderQuestion();
+}
+
 function get(x) {
 	return document.getElementById(x);
 }
 
 function renderQuestion () {
 	test = get('js-ques1');
+
+	//if statement to end test
+	if(position >= questions.length) {
+		test.innerHTML="<h2>You answered " +correct+ " of " +questions.length+ " questions correctly</h2>";
+		get('js-question-count').innerHTML = 'Test Complete';
+		pos=0;
+		correct=0;
+		return false;
+	}
+
+	//display question progress and assign current question to question and choices variables with radio buttons and submit
 	get('js-question-count').innerHTML = 'Question ' + (position + 1) + " of" + questions.length;
 	question = questions[position][0];
 	chA = questions[position][1];
@@ -40,12 +56,22 @@ function renderQuestion () {
 	test.innerHTML += "<input type='radio' name='choices' value='B'>" + chB + '<br>';
 	test.innerHTML += "<input type='radio' name='choices' value='C'>" + chC + '<br>';
 	test.innerHTML += "<input type='radio' name='choices' value='D'>" + chD + '<br><br>';
-	test.innerHTML += "<button onlcick='checkAnswer()'>Submit Answer</button>";
+	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
 }
 
-
+//function to see if checked choices is the correct choice and track correct amount and increase position
 function checkAnswer() {
-	alert('testing');
+	choices = document.getElementsByName('choices');
+	for(var i=0; i<choices.length; i++) {
+		if(choices[i].checked) {
+			choice=choices[i].value;
+		}
+	}
+	if(choice === questions[position][5]) {
+		correct++;
+	}
+	position++;
+	renderQuestion();
 }
 
 $(function() {
