@@ -131,12 +131,14 @@ function renderQuestion () {
 
 //function to see if checked choices is the correct choice and track correct amount and increase position
 function checkAnswer() {
-	choices = document.getElementsByName('choices');
+/*	var choices = document.getElementsByName('choices');
 	for(var i=0; i<choices.length; i++) {
 		if(choices[i].checked) {
-			choice=choices[i].value;
+			var choice=choices[i].value;
 		} 
 	}
+*/
+	var choice = $('[name="choices"]:checked').val();
 
 	if(choice === undefined) {
 		alert('You must select one answer')
