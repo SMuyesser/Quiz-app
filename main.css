@@ -96,6 +96,12 @@ div.start a {
 	text-align: center;
 }
 
+.question-box a {
+	text-decoration: none;
+	color: ;
+
+}
+
 #js-ques {
 	margin: 10px auto;
 }
