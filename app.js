@@ -11,20 +11,90 @@ var chD;
 var correct = 0;
 
 var questions = [
-	['What is a nickname for Manchester United FC?', 'The Red Dragons', 'The Red Devils', 'The Blue Devils', 'The Deviled Eggs', 'B', 'The Red Devils'],
-	['The current manager of Manchester United FC is ____________?', 'Alexander Ferguson', 'Diego Maradona', 'Jose Mourinho', 'Landon Donovan', 'C', 'Jose Mourinho'],
-	['Which American goalie also played goalie for Manchester United FC?', 'Clint Dempsey', 'Pele', 'Tim Howard', 'Michael Scott', 'C', 'Tim Howard'],
-	['The home stadium of Manchester United FC is _____________?', 'The Thunder Dome', 'The Field of Dreams', 'Wembley Stadium', 'Old Trafford', 'D', 'Old Trafford'],
-	['The Manchester Derby is between two rival Manchester teams including Manchester United and what other team?', 'Manchester Town', 'Manchester City', 'Manchesterville', 'Manchesterville Town City', 'B', 'Manchester City'],
-	['Which midfielder did Manchester United sign for a record fee from Italian club Juventus at the beginning of the season?', 'Po Paula', 'Pele', 'Paulo Pogo', 'Paul Pogba', 'D', 'Paul Pogba'],
-	['Which player currently holds the record for most goals scored for Manchester United?', 'Wayne Rooney', 'Bobby Charlton', 'Denis Law', 'Jack Rowley', 'A', 'Wayne Rooney'],
-	['Which player currently holds the record for most career appearances for Manchester United?', 'Bobby Charlton', 'Paul Scholes', 'Ryan Giggs', 'Bill Foulkes', 'C', 'Ryan Giggs'],
-	['Which player won the FIFA World Player of the Year award while playing for Manchester United?', 'David Beckham', 'Cristiano Ronaldo', 'Christian Ronald', 'Ronald McDonald', 'B', 'Cristiano Ronaldo'],
-	['Who has spent the longest amount of time managing Manchester United?', 'Alexander Ferguson', 'Jose Mourinho', 'David Moyes', 'Louis Van Gaal', 'A', 'Alexander Ferguson']
+
+	['What is a nickname for Manchester United FC?', 
+	'The Red Dragons', 
+	'The Red Devils', 
+	'The Blue Devils', 
+	'The Deviled Eggs', 
+	'B', 
+	'The Red Devils'],
+
+	['The current manager of Manchester United FC is ____________?', 
+	'Alexander Ferguson', 
+	'Diego Maradona', 
+	'Jose Mourinho', 
+	'Landon Donovan', 
+	'C', 
+	'Jose Mourinho'],
+
+	['Which American goalie also played goalie for Manchester United FC?', 
+	'Clint Dempsey', 
+	'Pele', 
+	'Tim Howard', 
+	'Michael Scott', 
+	'C', 
+	'Tim Howard'],
+
+	['The home stadium of Manchester United FC is _____________?', 
+	'The Thunder Dome', 
+	'The Field of Dreams', 
+	'Wembley Stadium', 
+	'Old Trafford', 
+	'D', 
+	'Old Trafford'],
+
+	['The Manchester Derby is between two rival Manchester teams including Manchester United and what other team?', 
+	'Manchester Town', 
+	'Manchester City', 
+	'Manchesterville', 
+	'Manchesterville Town City', 
+	'B', 
+	'Manchester City'],
+
+	['Which midfielder did Manchester United sign for a record fee from Italian club Juventus at the beginning of the season?', 
+	'Po Paula', 
+	'Pele', 
+	'Paulo Pogo', 
+	'Paul Pogba', 
+	'D', 
+	'Paul Pogba'],
+
+	['Which player currently holds the record for most goals scored for Manchester United?', 
+	'Wayne Rooney', 
+	'Bobby Charlton', 
+	'Denis Law', 
+	'Jack Rowley', 
+	'A', 
+	'Wayne Rooney'],
+
+	['Which player currently holds the record for most career appearances for Manchester United?', 
+	'Bobby Charlton', 
+	'Paul Scholes', 
+	'Ryan Giggs', 
+	'Bill Foulkes', 
+	'C', 
+	'Ryan Giggs'],
+
+	['Which player won the FIFA World Player of the Year award while playing for Manchester United?', 
+	'David Beckham', 
+	'Cristiano Ronaldo', 
+	'Christian Ronald', 
+	'Ronald McDonald', 
+	'B', 
+	'Cristiano Ronaldo'],
+
+	['Who has spent the longest amount of time managing Manchester United?', 
+	'Alexander Ferguson', 
+	'Jose Mourinho', 
+	'David Moyes', 
+	'Louis Van Gaal', 
+	'A',
+	'Alexander Ferguson']
 ];
 
 function startQuiz () {
-	$('div.start').replaceWith('<wrapper class="question-count"><h3 id="js-question-count"></h3></wrapper><wrapper class="question-box"><div id="js-ques"></div></wrapper>');
+	$('.start').replaceWith('<wrapper class="question-count"><h3 id="js-question-count"></h3></wrapper><wrapper class="question-box"><div id="js-ques"></div></wrapper>');
 	renderQuestion();
 }
 
@@ -56,7 +126,7 @@ function renderQuestion () {
 	test.innerHTML += "<input type='radio' name='choices' value='B'>" + chB + '<br>';
 	test.innerHTML += "<input type='radio' name='choices' value='C'>" + chC + '<br>';
 	test.innerHTML += "<input type='radio' name='choices' value='D'>" + chD + '<br><br>';
-	test.innerHTML += "<button onclick='checkAnswer()' id='submit-question'>Submit Answer</button>";
+	test.innerHTML += "<a><button onclick='checkAnswer()' id='submit-question'>Submit Answer</button></a>";
 }
 
 //function to see if checked choices is the correct choice and track correct amount and increase position

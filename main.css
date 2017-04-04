@@ -72,10 +72,14 @@ div.start a {
 	height: 35px;
 }
 
+#start-button:hover {
+	box-shadow: 2px 2px 3px black;
+}
+
 
 
 /************************************
-	Quiz Page
+	QUIZ PAGE
 ************************************/
 
  wrapper.question-box {
@@ -117,10 +121,16 @@ wrapper.question-count {
 #submit-question {
 	margin-bottom: 10px;
 	background-color: #C20808;
+	border-radius: 5%;
 	color: white;
 	width: 150px;
 	height: 30px;
 }
+
+#submit-question:hover {
+	box-shadow: 2px 2px 3px black;
+}
+
 
 /************************************
 	FOOTER
@@ -153,6 +163,11 @@ footer p {
 	font-weight: bold;
 	color: #606060;
 }
+
+
+/************************************
+	RESPONSIVE WALLPAPER
+************************************/
 
 @media screen and (min-width: 660px) {
 	html {
